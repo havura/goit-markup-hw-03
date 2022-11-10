@@ -1,0 +1,194 @@
+:root {
+    --main-text-color: #757575;
+    --secondary-text-color: #212121;
+    --main-bgc-color: #F5F5F5;
+    --secondary-bgc-color: #F5F4FA;
+    --accent-color: #2196F3;
+    --contacts-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--main-bgc-color);
+        color: var(--main-text-color);
+        }
+        
+    
+    .list {
+        list-style: none;
+    }
+    
+    .site-nav .link{
+        color: var(--secondary-text-color);
+        font-size: 14px;
+        line-height: 1.1;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    .site-nav .link:hover, 
+    .site-nav .link:focus {
+        color: var(--accent-color)
+    }
+    .auth-nav .adress-link {
+        color: var(--main-text-color);
+        font-size: 14px;
+        line-height: 1.1;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    
+    .auth-nav .adress-link:hover,
+    .auth-nav .adress-link:focus {
+        color: var(--accent-color);
+    }
+    .site-nav .link.current {
+        color: var(--accent-color);
+    }
+    .logo {
+        font-family: 'Raleway', sans-serif;
+        color: #000000;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+    
+        text-decoration: none;
+    }
+    span {
+        color:var(--accent-color);
+    }
+    /* Main*/
+    
+    .work-title-main,
+    .team-title-main,
+    .features-title-main {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        color: var(--secondary-text-color);
+        
+    }
+    .features-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        color: var(--secondary-text-color);
+        }
+    
+    .features-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+       }
+    .team-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        color: var(--secondary-text-color);
+    }
+    .team-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        
+    }
+    
+    .portfolio-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        color: var(--secondary-text-color);
+    }
+    .portfolio-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.9;
+        }
+    
+       /* Button*/
+    
+    .bttn {
+        cursor: pointer;
+        color: var(--secondary-text-color);
+        background-color: var(--secondary-bgc-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        border-radius: 4px;
+        border-color:transparent;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+        
+    .bttn:hover,
+    .bttn:focus {
+        background-color: var(--accent-color);
+        color:#FFFFFF;
+    }
+    
+        /* Hero*/
+    
+    .hero-bttn {
+        cursor: pointer;
+        color: #FFFFFF;
+        background-color: var(--accent-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    
+    }
+    .hero-bttn:hover,
+    .hero-bttn:focus {
+        background: #188CE8;
+        
+    }
+    .hero-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+       /* Footer*/
+    
+    .page-footer {
+        background: #2F303A;
+    }
+    .logo-footer {
+        font-family:'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    .adress-footer {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        color: #FFFFFF;
+        font-style: normal;
+        text-decoration: none;
+    }
+    .adress-footer:hover,
+    .adress-footer:focus {
+        color: var(--accent-color);
+    }
+    
+    .footer-contacts .contact-link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        font-style: normal;
+    }
+    .footer-contacts .contact-link:hover,
+    .footer-contacts .contact-link:focus {
+        color: var(--accent-color);
+    
+    }
+    
