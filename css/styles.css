@@ -1,9 +1,21 @@
+.vis-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 :root {
   --main-text-color: #757575;
   --secondary-text-color: #212121;
-  --main-bgc-color: #f5f5f5;
+  --main-bgc-color: #ffffff;
   --secondary-bgc-color: #f5f4fa;
   --accent-color: #2196f3;
+  --hero-footer-bgc: #2f303a;
   --contacts-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -19,12 +31,15 @@ h3,
 h4,
 h5,
 h6,
-p,
-ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
+p {
+  margin: 0px;
   padding-left: 0px;
 }
+
+.link {
+  text-decoration: none;
+}
+
 img {
   display: block;
 }
@@ -38,13 +53,14 @@ img {
 }
 
 .conteiner {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .page-header {
@@ -77,12 +93,11 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.1;
   font-weight: 500;
-  text-decoration: none;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -102,11 +117,14 @@ img {
 }
 
 .auth-nav .adress-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--main-text-color);
   font-size: 14px;
   line-height: 1.1;
   font-weight: 500;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 .auth-nav .adress-link:hover,
@@ -125,8 +143,9 @@ img {
   line-height: 1.2;
   text-decoration: none;
   padding: 25px 0;
+  letter-spacing: 0.03em;
 }
-span {
+.logo-wrap {
   color: var(--accent-color);
 }
 
@@ -153,115 +172,146 @@ span {
 .team-section {
   background-color: var(--secondary-bgc-color);
 }
+.team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Portfolio*/
+
 .filter-list {
   display: flex;
   flex-wrap: nowrap;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
+
+.filter-title {
+  text-align: center;
+  margin-top: 0px;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   flex-basis: calc((100%-90px) / 3);
 }
+
 .portfolio-border {
   border: 1px solid #eeeeee;
   border-top: none;
+  padding: 20px 24px;
 }
 
-.title {
-  text-align: center;
-  margin-top: 0px;
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  margin-bottom: 4px;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+.section-work {
+  padding-top: 47px;
+  padding-bottom: 94px;
 }
 
 .work-title-main,
-.team-title-main,
-.features-title-main {
+.team-title-main {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
+.section-features {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
 .features-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
 }
 
 .features-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
+  width: 270px;
 }
+
+.team-box {
+  background-color: var(--main-bgc-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-title {
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
 }
 .team-text {
   text-align: center;
-  margin-bottom: 30px;
-  font-weight: 400;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.2;
-}
-
-.portfolio-title {
-  padding-left: 24px;
-  padding-top: 20px;
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  color: var(--secondary-text-color);
-}
-.portfolio-text {
-  margin-bottom: 20px;
-  padding-left: 24px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
 
 /* Button*/
 
-.bttn {
+.btn {
+  padding: 6px 22px;
   cursor: pointer;
   color: var(--secondary-text-color);
   background-color: var(--secondary-bgc-color);
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.6;
   border-radius: 4px;
   border-color: transparent;
+  letter-spacing: 0.03em;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.bttn:hover,
-.bttn:focus {
+.btn:hover,
+.btn:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--main-bgc-color);
 }
 
 /* Hero*/
 .hero {
   text-align: center;
-  background: #2f303a;
+  background: var(--hero-footer-bgc);
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -271,13 +321,13 @@ span {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-bgc-color);
   width: 696px;
 }
 
-.hero-bttn {
+.hero-btn {
   cursor: pointer;
-  color: #ffffff;
+  color: var(--main-bgc-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -285,17 +335,21 @@ span {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px;
+  border: 0px;
+  letter-spacing: 0.06em;
 }
 
-.hero-bttn:hover,
-.hero-bttn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   background: #188ce8;
 }
 
 /* Footer*/
-
+.address {
+  font-style: normal;
+}
 .page-footer {
-  background: #2f303a;
+  background: var(--hero-footer-bgc);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -307,7 +361,7 @@ span {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--main-bgc-color);
   text-decoration: none;
 }
 
@@ -315,8 +369,7 @@ span {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: #ffffff;
-  font-style: normal;
+  color: var(--main-bgc-color);
   text-decoration: none;
 }
 .adress-footer:hover,
