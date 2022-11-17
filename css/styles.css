@@ -123,7 +123,6 @@ img {
   font-size: 14px;
   line-height: 1.1;
   font-weight: 500;
-  text-decoration: none;
   letter-spacing: 0.02em;
 }
 
@@ -370,7 +369,6 @@ img {
   font-size: 14px;
   line-height: 1.7;
   color: var(--main-bgc-color);
-  text-decoration: none;
 }
 .adress-footer:hover,
 .adress-footer:focus {
@@ -382,8 +380,6 @@ img {
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  font-style: normal;
 }
 .footer-contacts .contact-link:hover,
 .footer-contacts .contact-link:focus {
