@@ -1,12 +1,12 @@
 .vis-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
   overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 :root {
@@ -23,7 +23,6 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--main-bgc-color);
   color: var(--main-text-color);
-  font-size: 14px;
 }
 
 h1,
@@ -318,7 +317,7 @@ img {
   border-radius: 4px;
   border-color: transparent;
   letter-spacing: 0.03em;
-  border-width: 0px;
+  border: none;
 }
 
 .btn:hover,
@@ -390,14 +389,14 @@ img {
   text-decoration: none;
 }
 
-.adress-footer {
+.address-footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: var(--main-bgc-color);
 }
-.adress-footer:hover,
-.adress-footer:focus {
+.address-footer:hover,
+.address-footer:focus {
   color: var(--accent-color);
 }
 
