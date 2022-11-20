@@ -17,6 +17,10 @@
   --accent-color: #2196f3;
   --hero-footer-bgc: #2f303a;
   --contacts-color: rgba(255, 255, 255, 0.6);
+  --page-header-border: #ececec;
+  --logo-header: #000000;
+  --portfolio-border: #eeeeee;
+  --hero-btn-hov-foc: #188ce8;
 }
 
 body {
@@ -72,10 +76,11 @@ img {
 }
 
 .page-header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--page-header-border);
 }
 
 /* main-nav*/
+
 .nav {
   display: flex;
   align-items: center;
@@ -117,14 +122,13 @@ img {
 .auth-nav {
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .auth-nav .item + .item {
   margin-left: 50px;
 }
 
 .auth-nav .adress-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--main-text-color);
@@ -144,7 +148,7 @@ img {
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  color: #000000;
+  color: var(--logo-header);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -226,13 +230,12 @@ img {
 }
 
 .portfolio-border {
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--portfolio-border);
   border-top: none;
   padding: 20px 24px;
 }
 
 .portfolio-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -247,14 +250,13 @@ img {
 }
 
 .section-work {
-  padding-top: 47px;
+  padding-top: 0px;
   padding-bottom: 94px;
 }
 
 .work-title-main,
 .team-title-main {
   margin-bottom: 50px;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   color: var(--secondary-text-color);
@@ -262,13 +264,8 @@ img {
   text-align: center;
 }
 
-.section-features {
-  padding-top: 94px;
-  padding-bottom: 47px;
-}
 .features-title {
   margin-bottom: 10px;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   color: var(--secondary-text-color);
@@ -279,7 +276,6 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  width: 270px;
 }
 
 .team-title {
@@ -365,7 +361,7 @@ img {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background: #188ce8;
+  background: var(--hero-btn-hov-foc);
 }
 
 /* Footer*/
